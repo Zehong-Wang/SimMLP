@@ -39,15 +39,18 @@ python main.py --setting trans --dataset cora --use_params
 
 To ensure reproducibility of the paper, we provide the detailed hyper-parameters under `param` folder. You can use it by specifying `--use_params` in the script. 
 
-### Dataset and Evaluation Settings
+### Dataset
 
 We support ten public datasets, including `cora`, `citeseer`, `pubmed`, `amazon-cs`, `amazon-photo`, `co-cs`, `co-phys`, `wiki-cs`, `flickr`, `ogb-arxiv`. Please refer to the function `get_node_clf_dataset` in `dataset.py` for details. This enables the quick adaptation on new datasets. 
 
+### Evaluation Settings
+
 SimMLP can perform on three settings, including transductive, inductive, and cold-start. We describe these settings in the paper as: 
 
-<img src="settings.png" width="500">
+<img src="settings.png">
 
 You can run these settings by specifying the `--setting trans` or `--setting ind`. Note for SimMLP, the inference phase is naturally structure-free, thus the cold-start result is equivalent to the *inductive result* in inductive setting. 
+
 
 ### Extension to Graph Classification
 
