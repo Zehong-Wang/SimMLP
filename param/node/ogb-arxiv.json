@@ -1,0 +1,41 @@
+{
+    "dataset": "ogb-arxiv",
+
+    "epochs": 5000,
+    "verbose": 200,
+
+    "hidden_dim": 1024,
+    "pred_dim": 512,
+
+    "enc_layers": 8,
+    "enc_norm": "batch", 
+    "enc_drop": 0,
+    "res_enc": true,
+
+    "proj_layers": 3,
+    "proj_norm": "batch",
+    "proj_drop": 0.0,
+    "aggr_norm": "gcn",
+
+    "pred_layers": 2, 
+    "pred_norm": "batch",
+    "pred_drop": 0.0,
+
+    "lr_learning_rate": 0.0005, 
+    "lr_weight_decay": 0.0, 
+    "lr_batch_size": 0,
+    "lr_epochs": 15000,
+
+    "learning_rate": 1e-3,
+    "weight_decay": 0,
+
+    "feature_mask": 0.0,
+    "edge_mask": 0.25,
+    
+    "aug_rounds": 1,
+    "recon_lambda": 0,
+
+    "eta": 1,
+    "aux_pos_ratio": 0,
+    "use_scheduler": true
+}

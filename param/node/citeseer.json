@@ -1,0 +1,41 @@
+{
+    "dataset": "citeseer",
+
+    "epochs": 1000,
+    "verbose": 100,
+
+    "hidden_dim": 512,
+    "pred_dim": 512,
+
+    "enc_layers": 2,
+    "enc_norm": "batch", 
+    "enc_drop": 0,
+    "res_enc": true,
+
+    "proj_layers": 3,
+    "proj_norm": "batch",
+    "proj_drop": 0,
+    "aggr_norm": "gcn",
+
+    "pred_layers": 1,
+    "pred_norm": "batch",
+    "pred_drop": 0.5,
+
+    "lr_learning_rate": 0.01, 
+    "lr_weight_decay": 0.0, 
+    "lr_batch_size": 0,
+    "lr_epochs": 5000,
+
+    "learning_rate": 0.0005,
+    "weight_decay": 0.00005,
+
+    "feature_mask": 0.75,
+    "edge_mask": 0.5,   
+    
+    "aug_rounds": 1,
+    "recon_lambda": 10,
+
+    "eta": 3,
+    "aux_pos_ratio": 0,
+    "use_scheduler": true
+}

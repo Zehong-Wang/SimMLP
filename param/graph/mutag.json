@@ -1,0 +1,39 @@
+{
+    "dataset": "mutag",
+
+    "epochs": 100,
+    "verbose": 1,
+    "batch_size": 64,
+    "deg4feat": true, 
+
+    "pooling": "sum",
+    
+    "hidden_dim": 512,
+    "pred_dim": 512,
+
+    "enc_layers": 2,
+    "enc_norm": "batch", 
+    "enc_drop": 0.0,
+    "res_enc": true,
+
+    "proj_layers": 1,
+    "proj_norm": "batch",
+    "proj_drop": 0.0,
+    "aggr_norm": "gcn",
+    
+    "pred_layers": 1, 
+    "pred_norm": "batch",
+    "pred_drop": 0.0,
+
+    "learning_rate": 0.01,
+    "weight_decay": 0.0,
+
+    "feature_mask": 0.5,
+    "edge_mask": 0.25,
+    
+    "aug_rounds": 1,
+    "recon_lambda": 1,
+
+    "eta": 1.0,
+    "aux_pos_ratio": 0
+}
