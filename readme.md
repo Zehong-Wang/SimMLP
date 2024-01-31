@@ -37,11 +37,11 @@ To quickly run the model, please run `main.py` by specifying the experiment sett
 python main.py --setting trans --dataset cora --use_params
 ```
 
-To ensure reproducibility of the paper, we provide the detailed hyper-parameters under `param` folder. You can use it by specifying `--use_params` in the script. 
+To ensure the reproducibility of the paper, we provide the detailed hyper-parameters under `param` folder. You can use it by specifying `--use_params` in the script. 
 
 ### Dataset
 
-We support ten public datasets, including `cora`, `citeseer`, `pubmed`, `amazon-cs`, `amazon-photo`, `co-cs`, `co-phys`, `wiki-cs`, `flickr`, `ogb-arxiv`. Please refer to the function `get_node_clf_dataset` in `dataset.py` for details. This enables the quick adaptation on new datasets. 
+We support ten public datasets, including `cora`, `citeseer`, `pubmed`, `amazon-cs`, `amazon-photo`, `co-cs`, `co-phys`, `wiki-cs`, `flickr`, `ogb-arxiv`. Please refer to the function `get_node_clf_dataset` in `dataset.py` for details. This enables the quick adaptation of new datasets. We encourage researchers to use Nvidia A100 (80GB) for the Arxiv dataset, and Nvidia GeForce RTX 3090 (24GB) for the remaining datasets. 
 
 ### Evaluation Settings
 
@@ -64,13 +64,13 @@ The hyper-parameters are also provided under `param/graph/`.
 
 ### Extension to Supervised Version
 
-To run the experiments on supervised SimMLP, please run the following script. We only implement the model on transductive setting for simplicity. We encourage researchers to extend this in other two settings. 
+To run the experiments on supervised SimMLP, please run the following script. We only implement the model on the transductive setting for simplicity. We encourage researchers to extend this in the other two settings. 
 
 ```
 python main_sup.py --dataset cora --use_params
 ```
 
-As analyzed in the paper, the supervised version cannot achieve desirable performance. We consider it might because the inconsistency (or even conflict) between the supervised cross-entropy loss and the self-supervised alignment loss. We leave this in the future work. 
+As analyzed in the paper, the supervised version cannot achieve desirable performance. We consider it might because of the inconsistency (or even conflict) between the supervised cross-entropy loss and the self-supervised alignment loss. We leave this in the future work. 
 
 ## Experimental Results
 
