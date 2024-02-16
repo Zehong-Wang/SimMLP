@@ -2,6 +2,8 @@
 
 This repo presents implementation of SimMLP: A simple framework for learning MLPs on graphs without supervision. 
 
+**Link**: https://arxiv.org/abs/2402.08918
+
 ## Introduction
 
 We present a simplified framework (SimMLP) to enhance model generalization, especially on unseen nodes. In particular, we employ self-supervised alignment between GNN and MLP embeddings to model the fine-grained and generalizable correlations between node features and graph structures. 
@@ -79,3 +81,20 @@ We present the experimental results on node classification with three settings. 
 <img src="result_trans.png">
 
 <img src="result_ind_cold.png">
+
+## Contact Us
+
+Please open an issue or contact `zwang43@nd.edu` if you have questions. 
+
+## Citation
+
+Please cite the following paper corresponding to the repository: 
+
+```
+@article{wang2024graph,
+  title={Graph Inference Acceleration by Learning MLPs on Graphs without Supervision},
+  author={Wang, Zehong and Zhang, Zheyuan and Zhang, Chuxu and Ye, Yanfang},
+  journal={arXiv preprint arXiv:2402.08918},
+  year={2024}
+}
+```
