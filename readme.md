@@ -96,7 +96,7 @@ Please cite the following paper corresponding to the repository:
   year={2024}
 }
 
-@inproceeding{wang2025training,
+@inproceedings{wang2025training,
   title={Training MLPs on Graphs without Supervision},
   author={Wang, Zehong and Zhang, Zheyuan and Zhang, Chuxu and Ye, Yanfang},
   booktitle={The 18th ACM International Conference on Web Search and Data Mining},
