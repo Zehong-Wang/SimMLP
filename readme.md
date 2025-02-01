@@ -1,8 +1,6 @@
-# A Simple Framework for Learning MLPs on Graph without Supervision
+# Training MLPs on Graphs without Supervision
 
-This repo presents implementation of SimMLP: A simple framework for learning MLPs on graphs without supervision. 
-
-**Link**: https://arxiv.org/abs/2402.08918
+**Link**: https://arxiv.org/abs/2412.03864
 
 ## Introduction
 
@@ -91,10 +89,18 @@ Please open an issue or contact `zwang43@nd.edu` if you have questions.
 Please cite the following paper corresponding to the repository: 
 
 ```
-@article{wang2024graph,
-  title={Graph Inference Acceleration by Learning MLPs on Graphs without Supervision},
+@article{wang2024training,
+  title={Training MLPs on Graphs without Supervision},
   author={Wang, Zehong and Zhang, Zheyuan and Zhang, Chuxu and Ye, Yanfang},
-  journal={arXiv preprint arXiv:2402.08918},
+  journal={arXiv preprint arXiv:2412.03864},
   year={2024}
 }
+
+@inproceeding{wang2025training,
+  title={Training MLPs on Graphs without Supervision},
+  author={Wang, Zehong and Zhang, Zheyuan and Zhang, Chuxu and Ye, Yanfang},
+  booktitle={The 18th ACM International Conference on Web Search and Data Mining},
+  year={2025}
+}
+
 ```
